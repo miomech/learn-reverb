@@ -47,5 +47,7 @@ class changeFirstOrderStatus extends Command
         $order = Order::first();
         $order->status = $status;
         $order->save();
+
+        $this->info('Order status changed successfully to ' . $status->value);
     }
 }
