@@ -14,10 +14,15 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="font-sans antialiased dark:bg-black dark:text-white/50">
-    <div>
-        <h1 class="text-red-500" >Hello! Welcome</h1>
+<body class="font-sans antialiased">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 my-12">
+        <!-- We've used 3xl here, but feel free to try other max-widths based on your needs -->
+        <div class="mx-auto max-w-3xl">
+            <h1 class="text-indigo-500 font-bold text-2xl ">Test</h1>
+            <livewire:progress-bar lowest-step=1 highest-step=6  />
+        </div>
     </div>
+
 </body>
 
 </html>
